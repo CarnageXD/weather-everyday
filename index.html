@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="ua">
+  <head>
+    <title>WeatherEveryday!</title>
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta
+      http-equiv="Content-Security-Policy"
+      content="upgrade-insecure-requests"
+    />
+    <meta name="viewport" content="width=device-width" />
+  </head>
+
+  <body>
+    <!--mainTheme-->
+    <div oncopy="return false" class="main-theme">
+      <div class="container">
+        <div class="main-theme-block">
+          <div class="main-theme-title">
+            <span class="logo-text">WeatherEveryday</span>
+            <img class="logo-img" src="assets/img/giphy.gif" />
+          </div>
+          <div class="main-theme-navigation">
+            <div class="geolocation-button navigation-button">
+              Search by your geolocation
+            </div>
+            <div class="location-button navigation-button">
+              Search by location
+            </div>
+          </div>
+          <form class="main-theme-input">
+            <input
+              name="location"
+              class="app-input"
+              required
+              placeholder="Enter a location..."
+            />
+            <button id="main-theme-input" type="submit" class="button-arrow">
+              <i class="fas fa-arrow-right"></i>
+            </button>
+            <div class="search-close"><i class="far fa-times-circle"></i></div>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <!--mainPage-->
+    <header>
+      <div class="container">
+        <div class="header-body">
+          <div class="header-title">
+            <span class="header-logo-text">WeatherEveryday!</span>
+            <img class="logo-img" src="/assets/img/giphy.gif" />
+          </div>
+          <div class="header-about-buttons hide">
+            <div class="about-me about-button">About me</div>
+            <div class="about-button">
+              <a
+                href="https://www.weatherbit.io/api"
+                rel="noopener noreferrer"
+                target="_blank"
+                >About API
+              </a>
+            </div>
+          </div>
+          <form class="header-input hide">
+            <input
+              name="location"
+              class="app-input"
+              required
+              placeholder="Enter a location..."
+            />
+            <button type="submit" class="button-arrow">
+              <i class="fas fa-arrow-right"></i>
+            </button>
+          </form>
+          <div class="header-burger">
+            <i class="fas fa-bars"></i>
+          </div>
+        </div>
+        <div class="burger-content">
+          <div class="burger-container">
+            <div class="header-about-buttons burger">
+              <div class="about-me-burger about-button">About me</div>
+              <div class="about-button">
+                <a
+                  href="https://www.weatherbit.io/api"
+                  rel="noopener noreferrer"
+                  target="_blank"
+                  >About API
+                </a>
+              </div>
+            </div>
+            <form class="header-input burger">
+              <input
+                name="location"
+                class="app-input"
+                required
+                placeholder="Enter a location..."
+              />
+              <button type="submit" class="button-arrow">
+                <i class="fas fa-arrow-right"></i>
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!--mainContent-->
+    <main>
+      <div class="main-content">
+        <span class="loading">
+          <img src="assets/img/refresh.gif" />
+        </span>
+        <div class="main-container container">
+          <div class="day-info info-main-block">
+            <div class="day-primary-info">
+              <div class="primary-info-time-update">
+                Last time updated: 07:05
+              </div>
+              <div class="primary-info-current-degree">6.7°с</div>
+              <div class="primary-info-weather-description">Clear sky</div>
+              <div class="primary-info-additional-info">
+                <div class="primary-info-humidity">
+                  <div>Humidity</div>
+                  <div class="humidity-value">81.5%</div>
+                </div>
+                <div class="primary-info-separator">|</div>
+                <div class="primary-info-current-wind">
+                  <div>Wind</div>
+                  <div class="wind-speed-value">2.5m/s</div>
+                </div>
+              </div>
+            </div>
+            <div class="day-secondary-info">
+              <div class="day-secondary-info-first">
+                <div class="weather-parameter">
+                  <div class="weather-parameter-title">Feels like, °с</div>
+                  <div class="weather-parameter-value feels-like">3.5</div>
+                </div>
+                <div class="weather-parameter">
+                  <div class="weather-parameter-title">Pressure, hPa</div>
+                  <div class="weather-parameter-value pressure">1007.4</div>
+                </div>
+                <div class="weather-parameter">
+                  <div class="weather-parameter-title">Cloudiness, %</div>
+                  <div class="weather-parameter-value cloudiness">0</div>
+                </div>
+              </div>
+              <div class="day-secondary-info-second">
+                <div class="weather-parameter">
+                  <div class="weather-parameter-title">Visibility, km</div>
+                  <div class="weather-parameter-value visibility">22.9</div>
+                </div>
+                <div class="weather-parameter">
+                  <div class="weather-parameter-title">Wind direction</div>
+                  <div class="weather-parameter-value win-dir">SSE</div>
+                </div>
+                <div class="weather-parameter">
+                  <div class="weather-parameter-title">Precipitation, %</div>
+                  <div class="weather-parameter-value precipitation">0</div>
+                </div>
+              </div>
+            </div>
+            <div class="geolocation-day-info">
+              <div class="geolocation-title">Kyiv</div>
+              <div class="geolocation-date">31-10-2021</div>
+              <div class="geolocation-icon-description">
+                <img src="/assets/weather_icons/a02n.png" />
+              </div>
+            </div>
+          </div>
+          <div class="week-info info-main-block">
+            <div class="weeksday-container">
+              <div class="day-date">31.10</div>
+              <div class="day-icon-description">
+                <img src="/assets/weather_icons/a02d.png" />
+              </div>
+              <div class="day-degree">3.8°с</div>
+              <div class="day-weather-description">Few Clouds</div>
+            </div>
+            <div class="weeksday-container">
+              <div class="day-date">31.10</div>
+              <div class="day-icon-description">
+                <img src="/assets/weather_icons/a02d.png" />
+              </div>
+              <div class="day-degree">3.8°с</div>
+              <div class="day-weather-description">Few Clouds</div>
+            </div>
+            <div class="weeksday-container">
+              <div class="day-date">31.10</div>
+              <div class="day-icon-description">
+                <img src="/assets/weather_icons/a02d.png" />
+              </div>
+              <div class="day-degree">3.8°с</div>
+              <div class="day-weather-description">Few Clouds</div>
+            </div>
+            <div class="weeksday-container">
+              <div class="day-date">31.10</div>
+              <div class="day-icon-description">
+                <img src="/assets/weather_icons/a02d.png" />
+              </div>
+              <div class="day-degree">3.8°с</div>
+              <div class="day-weather-description">Few Clouds</div>
+            </div>
+            <div class="weeksday-container">
+              <div class="day-date">31.10</div>
+              <div class="day-icon-description">
+                <img src="/assets/weather_icons/a02d.png" />
+              </div>
+              <div class="day-degree">3.8°с</div>
+              <div class="day-weather-description">Few Clouds</div>
+            </div>
+            <div class="weeksday-container">
+              <div class="day-date">31.10</div>
+              <div class="day-icon-description">
+                <img src="/assets/weather_icons/a02d.png" />
+              </div>
+              <div class="day-degree">3.8°с</div>
+              <div class="day-weather-description">Few Clouds</div>
+            </div>
+            <div class="weeksday-container">
+              <div class="day-date">31.10</div>
+              <div class="day-icon-description">
+                <img src="/assets/weather_icons/a02d.png" />
+              </div>
+              <div class="day-degree">3.8°с</div>
+              <div class="day-weather-description">Few Clouds</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <!--about author popup-->
+    <div id="popup" class="popup">
+      <div class="popup-body">
+        <div class="popup-content">
+          <div>
+            <a id="popup-close" class="popup-close"
+              ><i class="far fa-times-circle"></i
+            ></a>
+            <div class="popup-title">About author of project</div>
+            <div class="popup-text">
+              <ul>
+                <li>
+                  <span>Telegram:</span>
+                  <a
+                    href="https://t.me/carnagexd"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    >@carnagexd</a
+                  >
+                </li>
+                <li>
+                  <span>Instagram:</span>
+                  <a
+                    href="https://www.instagram.com/h.carnage/"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    >@h.carnage</a
+                  >
+                </li>
+                <li>
+                  <span>Github:</span>
+                  <a
+                    href="https://github.com/carnagexd"
+                    rel="noopener noreferrer"
+                    target="_blank"
+                    >@carnagexd</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script
+      src="https://kit.fontawesome.com/ec4fabdb94.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="app.js"></script>
+  </body>
+</html>
