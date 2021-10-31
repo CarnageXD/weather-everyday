@@ -141,7 +141,7 @@ function setWeekWeather(data) {
     days[i].children[0].innerHTML = cutDate(data.data[i].datetime);
     days[
       i
-    ].children[1].innerHTML = `<img src="/assets/weather_icons/${data.data[i].weather.icon}.png"/>`;
+    ].children[1].innerHTML = `<img src="./assets/weather_icons/${data.data[i].weather.icon}.png"/>`;
     days[i].children[2].innerHTML = data.data[i].temp + "°с";
     days[i].children[3].innerHTML = data.data[i].weather.description;
   }
@@ -164,7 +164,7 @@ function setDayWeather(data, currentData) {
     data.data[day].weather.description;
   document.querySelector(
     ".geolocation-icon-description"
-  ).innerHTML = `<img src="/assets/weather_icons/${data.data[day].weather.icon}.png"/>`;
+  ).innerHTML = `<img src="./assets/weather_icons/${data.data[day].weather.icon}.png"/>`;
   document.querySelector(".geolocation-title").innerHTML = data.city_name;
   document.querySelector(".geolocation-date").innerHTML = data.data[
     day
