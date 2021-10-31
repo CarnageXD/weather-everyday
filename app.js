@@ -1,6 +1,6 @@
 //CONSTANTS
 const API_KEY = "74d929a73e3642fda3a2696e947bfd22";
-const BASE_URL = "http://api.weatherbit.io/v2.0/forecast/daily";
+const BASE_URL = "https://api.weatherbit.io/v2.0/forecast/daily";
 const CURRENT_BASE_URL = "https://api.weatherbit.io/v2.0/current";
 const days = document.querySelectorAll(".weeksday-container");
 const inputs = document.querySelectorAll("form");
