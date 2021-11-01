@@ -23,6 +23,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
   position: relative;
+  overflow: hidden;
 }
 
 .container {

@@ -106,6 +106,7 @@ async function startApp() {
   setDayWeather(weekData, currentData);
   lat = null;
   lon = null;
+  document.body.style.overflow = "auto";
 }
 
 async function fetchWeekApi() {
