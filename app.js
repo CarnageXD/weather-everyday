@@ -40,6 +40,7 @@ mainThemeCloseInput.addEventListener("click", () => {
 
 logoBackMainTheme.addEventListener("click", () => {
   mainTheme.classList.remove("hide");
+  document.body.style.overflow = "hidden";
 });
 
 aboutMeButton.addEventListener("click", () => {
@@ -125,6 +126,7 @@ async function fetchWeekApi() {
       mainThemeNavigation.classList.remove("hide");
       mainThemeInput.classList.remove("show");
       mainTheme.classList.remove("hide");
+      document.body.style.overflow = "hidden";
     }
   }
 }
