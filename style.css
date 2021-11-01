@@ -524,6 +524,10 @@ header {
     height: 85px;
     width: 85px;
   }
+  .main-theme-input {
+    width: 90%;
+    float: right;
+  }
   .header-title {
     justify-content: center;
   }
@@ -599,6 +603,9 @@ header {
   .main-content {
     padding: 15px 30px;
   }
+  .main-theme-input {
+    width: 88%;
+  }
 }
 
 @media only screen and (max-width: 555px) {
@@ -629,6 +636,10 @@ header {
 }
 
 @media only screen and (max-width: 376px) {
+  .main-theme-input {
+    padding-right: 8px;
+    width: 83%;
+  }
   .logo-text {
     font-size: 1.75rem;
   }
