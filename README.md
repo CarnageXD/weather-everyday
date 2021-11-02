@@ -15,5 +15,5 @@ This app implements two types of logic: weather forecast based on user input or 
 
 ### Live demo: https://carnagexd.github.io/weather-everyday/
 
-### Expirement with project:
+### Experiment with the project:
 `git clone https://github.com/CarnageXD/weather-everyday.git` in your terminal
