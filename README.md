@@ -14,3 +14,6 @@ All displayed data in this application is provided by WeatherBit API. For the to
 This app implements two types of logic: weather forecast based on user input or by user geolocation.
 
 ### Live demo: https://carnagexd.github.io/weather-everyday/
+
+### Expirement with project:
+`git clone https://github.com/CarnageXD/weather-everyday.git` in your terminal
