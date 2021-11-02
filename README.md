@@ -13,6 +13,8 @@ A responsive design was developed, that allows to view a weather data on any dev
 All displayed data in this application is provided by WeatherBit API. For the today weather, the 'current API' is used, for the rest of days, '16-days API' is used.
 This app implements two types of logic: weather forecast based on user input or by user geolocation.
 
+## Features
+
 | Feature  |  Coded?       | Description  |
 |----------|:-------------:|:-------------|
 | Get forecast by location | &#10004; | Ability to get weather forecast by user input |
